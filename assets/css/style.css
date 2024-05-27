@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    /* الويدث حسب الشغل اللي عنا  */
+    margin: auto;
+    /* هاي بنحطها جايما في الكونتينر عشان يسنتر اتوقع */
+    /* بنستخدم الكونتينتر لاغلب المواقع اللي فيها اكثر من ديف ببلشن كلهن من نفس المكان */
+}
+
+html {
+    --secColor: rgba(255, 255, 255, 0.7);
+    --mainColor: rgb(244, 98, 58);
+}
+
+
+
+.navbar {
+
+    position: fixed;
+    width: 100%;
+    overflow: auto;
+    /* عشا مشكلة اللوغو والناف  */
+    margin-top: 20px;
+    z-index: 9999;
+
+
+
+}
+
+/* لفوق كلو صح  */
+.logo {
+    float: left;
+    width: 40%;
+    color: var(--secColor);
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.nav {
+
+    float: left;
+    width: 60%;
+    text-align: right;
+    font-size: 20px;
+
+}
+
+.list {
+    list-style-type: none;
+}
+
+.link-nav {
+    text-decoration: none;
+    color: var(--secColor);
+    text-transform: capitalize;
+    margin-right: 15px;
+    font-size: 14.4px;
+}
+
+.list-item {
+    display: inline-block;
+    text-align: left;
+    /*  بقدر استخدم  فلوت واعمل مسافات بينهم بعدين  */
+    /* استخدمت الانلاين بلوك عشان يجيبهم  جمب بعض ويعمل مسافات لانو اصلا انا بدي بينهم مسافات  */
+}
+
+@media(max-width:786px) {
+
+    .nav,
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+}
+
+.header-content {
+    background-image: url(../img/bg-masthead.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: 0-90px;
+
+}
+
+.header-content-item {
+
+    padding-top: 140px;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--secColor);
+}
+
+/* @media(max-width:786px) {
+    .header-content-item {}
+} */
+
+h1 {
+    font-size: 56px;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 500;
+    line-height: 1.2;
+    color: white;
+
+}
+
+@media(max-width:768px) {
+    h1 {
+        font-size: 50px;
+        width: 100%;
+
+    }
+}
+
+.paragraphone {
+    color: var(--secColor);
+    font-size: 1.15rem;
+    margin: auto;
+    width: 44%;
+}
+
+@media(max-width:768px) {
+    .paragraphone {
+
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+       
+    }
+}
+
+.line {
+    width: 40px;
+    height: 0.2rem;
+    display: block;
+    background-color: var(--mainColor);
+    margin: 1.5rem auto;
+    opacity: 1;
+
+}
+
+.link {
+
+    text-decoration: none;
+    margin-top: 100px;
+    color: white;
+    display: block;
+    /* A هي عنصر انلاين
+    لخهيك لازم نعملو بلوك  */
+    background-color: var(--mainColor);
+    width: fit-content;
+    /* العرض على قد المحتوى */
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px 20px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 700;
+    font-family: Merriweather Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.header .overley {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%);
+    height: 100%;
+}
+
+
+.about {
+
+    background-color: var(--mainColor);
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 100px;
+    height: 500px;
+}
+
+.about h2 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.about .line {
+
+    background-color: #fff;
+}
+
+.about .para2 {
+    /* background-color: red; */
+    width: 53%;
+    margin: auto;
+    font-size: 1.15rem;
+
+    color: var(--secColor)
+}
+
+.para3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.Services .line {
+    margin-bottom: 80px;
+
+}
+
+.about .link {
+    background-color: #fff;
+    color: black;
+}
+
+.Services {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.Service-item {
+    float: left;
+    width: 25%;
+}
+@media(max-width:786px) {
+.Service-item{
+    
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+}
+.Services-items {
+    overflow: auto;
+}
+
+.Service-item i {
+    font-size: 45px;
+    color: var(--mainColor);
+    margin-bottom: 20px;
+
+
+}
+
+.Service-item h3 {
+    margin-bottom: 10px;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 24px;
+    font-weight: 500;
+    /* width: 71%; */
+}
+
+.Service-item p {
+    width: 83%;
+    margin: auto;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #6c757d;
+}
+
+
+.portfolio {
+    margin-top: 100px;
+}
+
+.portfolio-items {
+    overflow: hidden;
+}
+
+.portfolio-item {
+    float: left;
+    width: 33.33%;
+    position: relative;
+}
+@media(min-width:576px)and (max-width:992px){
+    .portfolio-item {
+
+        width: 50%;
+        /* margin-bottom: 20px; */
+}
+}
+
+@media(max-width:576px){
+    .portfolio-item {
+     width: 100%;
+    }
+
+
+}
+/* or 
+الفلوت لمين اعطيتها للبورتفوليو ايتم ، بروح على اخر بورتفوليو وبعمل ديف بسميها clrFix
+ in css : 
+ .clfix{
+    clear:both;
+*/
+.portfolio img {
+    display: block;
+}
+
+/* .overley */
+.portfolio .overley {
+    background-color: var(--mainColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.portfolio-item:hover .overley {
+    opacity: .8;
+    /* معناها لما يجي الماوس على البورتفوليو ايتم خلي الاوفر لاي .... */
+}
+
+.overley-content {
+    text-align: center;
+    margin-top: 150px;
+
+    color: white;
+}
+
+.overley-content p {
+    font-size: 19.2px;
+    /* font-family: Merriweather, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+    line-height: 28.8px;
+}
+
+.overley-content h2 {
+    font-size: 13.6px;
+    line-height: 20.4px;
+    opacity: 0.6;
+}
+
+.download {
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 10px;
+    background-color: rgb(33, 37, 41);
+}
+
+.download .link {
+    background-color: rgb(248, 249, 250);
+    color: black;
+}
+
+.download h2 {
+    color: white;
+    font-size: 32px;
+}
+
+.contact {
+    padding-top: 100px;
+    text-align: center;
+
+}
+
+.header-items {
+    color: rgb(221, 17, 17);
+    background-color: aquamarine;
+
+
+}
+
+.contant-des {
+    color: #6c757d;
+    width: 35%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.contact-items {
+    width: 60%;
+    overflow: hidden;
+    margin: 38px auto;
+
+}
+@media(max-width:576px){
+    .contact-items{
+  
+    width: 100%;
+   
+}
+}
+.contact-item {
+    float: left;
+    width: 50%;
+}
+
+.contact i {
+    display: block;
+    font-size: 40px;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.contact-info-mail {
+    color: var(--mainColor);
+
+}
+
+.footer {
+    background-color: rgb(248, 249, 250);
+    height: 130px;
+    color: rgb(108, 117, 125);
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 50px;
+    /* position: fixed;
+     bottom: 0;
+     width: 100%; */
+}
